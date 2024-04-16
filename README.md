@@ -13,13 +13,10 @@ import MarqueeText
 
 struct ContentView: View {    
     var body: some View {
-     MarqueeText(
-     text: "A subtitle that is way too long, but it scrolls homie",
-     font: UIFont.preferredFont(forTextStyle: .subheadline),
-     leftFade: 16,
-     rightFade: 16,
-     startDelay: 3
-     )
+        PPMarqueeText(text: "66666", font: .systemFont(ofSize: 13))
+            .foregroundColor(Color(PPRC.Text.primary))
+            .lineLimit(1)
+            .frame(maxWidth: .infinity, idealHeight: 20, alignment: .leading)
    }
 }
 ```
@@ -28,4 +25,4 @@ struct ContentView: View {
 
 You can use this software under the terms and conditions of the MIT License.
 
-Joe Kennedy © 2020
+Rex © 2024
